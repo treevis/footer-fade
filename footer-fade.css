@@ -1,0 +1,91 @@
+body {
+	background: #fafafa;
+	color: #333;
+	font: 75%/1.25 helmet, freesans, sans-serif;
+	margin: 2em auto;
+	max-width: 60em;
+	padding: 0 0 6em;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+[role="banner"] .logo {
+	font-size: 2em;
+	margin: 1em 0;
+}
+
+[role="contentinfo"] .logo {
+	bottom: 0.875em;
+	left: 50%;
+	margin-left: -5em; /* half of width */
+	position: fixed;
+	text-align: center;
+	width: 20%;
+	z-index: 10000;
+}
+
+.js [role="contentinfo"] .logo {
+	bottom: 0;
+	opacity: 0;
+}
+
+[role="banner"] {
+	width: 100%;
+}
+
+
+[role="navigation"] {
+	background: #fff;
+	background: rgba(255,255,255,.90);
+	bottom: 0;
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+[role="navigation"] .inner {
+	overflow: hidden;
+	padding: 1.5em;
+}
+
+[role="navigation"] ul {
+	list-style: none none;
+	margin: 0;
+	padding: 0;
+	width: 40%;
+}
+
+[role="navigation"] ul.primary {
+	float: left;
+}
+
+[role="navigation"] ul.secondary {
+	float: right;
+	text-align: right;
+}
+
+[role="navigation"] li {
+	display: inline-block;
+	padding: 0 0 0 10px;
+}
+
+[role="navigation"] li:first-child {
+	padding-left: 0;
+}
+
+
+[role="main"] {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
