@@ -9,10 +9,10 @@ Assumes jQuery.
 		var isVisible = false,
 			changeVisibility = false,
 			scrollY = $(window).scrollTop(),
-			$footerLogo = $('[role="contentinfo"] .logo');
+			$footerLogo = $('#footer-logo');
 
 		function init() {
-			$('html').addClass('js').removeClass('no-js');
+			$('html').addClass('js');
 			getScroll();
 		}
 
